@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Quiz: Da hora de pôr a mesa, éramos cinco
 
-# Run and deploy your AI Studio app
+A Real-time Multiplayer Quiz built with **Next.js** and **Firebase**.
 
-This contains everything you need to run your app locally.
+## 🚀 Deploy to Vercel
 
-View your app in AI Studio: https://ai.studio/apps/drive/1urVuRHsuZuGSvuNOr-Y8mtkNMPlLT2kq
+This project is ready to be deployed to Vercel.
 
-## Run Locally
+### Steps:
+1.  **Improt Project**: Select this repository in your Vercel Dashboard.
+2.  **Environment Variables**: You **MUST** add the following environment variables in the Vercel Project Settings for the app to work:
 
-**Prerequisites:**  Node.js
+    - `NEXT_PUBLIC_FIREBASE_API_KEY`
+    - `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
+    - `NEXT_PUBLIC_FIREBASE_DATABASE_URL`
+    - `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+    - `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
+    - `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
+    - `NEXT_PUBLIC_FIREBASE_APP_ID`
 
+    *You can find these values in your Firebase Console > Project Settings.*
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3.  **Build Command**: Next.js defaults are fine (`next build`).
+4.  **Install Command**: Next.js defaults are fine (`npm install` or `yarn install`).
+
+## 🛠 Features
+- **Real-time Gameplay**: Powered by Firebase Realtime Database.
+- **Scoring System**: Points based on speed.
+- **Dynamic Leaderboard**: Updates after every question.
+- **Podium**: Celebration animation for top 3 players.
+
+## 📂 Project Structure
+- `/pages`: Next.js routes (Home, Host, Game).
+- `/lib`: Firebase and Game Logic.
+- `/data`: Quiz questions content.
