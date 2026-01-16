@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   // Ensure we can use local images if needed, though mostly using internal assets
   images: {
-    domains: [], 
+    domains: [],
   },
 }
 
-module.exports = nextConfig
+export default nextConfig;
